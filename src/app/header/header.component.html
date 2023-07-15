@@ -1,15 +1,34 @@
 <header>
-  <div class="logo">
-    <i class="user"></i>
-    <span>Sotamba Acosta Jean Pierre</span>
+  <div class="container">
+    <nav class="flex items-center justify-between">
+      <div class="left flex justify-right">
+        <div>
+          <a href="#">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#">Blog</a>
+          <a href="#more">More</a>
+        </div>
+      </div>
+      <div class="right">
+        <button class="btn btn-primary">Contact</button>
+      </div>
+    </nav>
   </div>
-  <div class="profession">
-    <i class="work"></i>
-    <span>Fullstack Developer</span>
-  </div>
-  <div class="icons">
-    <a href="link1"><i class="instagram"></i></a>
-    <a href="link2"><i class="fb"></i></a>
-    <a href="link3"><i class="linkedin"></i></a>
+  <!-- BREVE DESCRIZIONE -->
+  <div class="hero flex items-centre">
+    <div class="left flex-1 circle-container">
+        <img src="../../assets/images/195909631_363330995218497_111724520252459733_n.jpg" class="circle-image" title="photo"/>
+    </div>
+    <div class="right flex-1">
+        <h1>
+            I'm a Full<br />
+            <span>Stack Developer</span>
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            illum nam nobis, minima laudantium fugit sequi nostrum quod impedit,
+            beatae necessitatibus praesentium optio labore nemo!
+        </p>
+        <div><button class="btn btn-secondary" (click)="openDialog()">DOWNLOAD CV</button></div>
+        <app-dialog-custom [title]="title"></app-dialog-custom>
+    </div>
   </div>
 </header>

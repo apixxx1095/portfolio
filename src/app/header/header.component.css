@@ -1,0 +1,23 @@
+.circle-image {
+    max-width: 100%;
+    /* Assicura che l'immagine non superi le dimensioni del cerchio */
+    max-height: 100%;
+    /* Ridimensiona l'immagine per riempire completamente il contenitore */
+    object-fit: cover;
+    /* Assicura che l'immagine sia tagliata in forma di cerchio */
+    border-radius: 50%;
+}
+
+.circle-container {
+    width: 200px;
+    /* Imposta la larghezza del cerchio */
+    height: 450px;
+    /* Imposta l'altezza del cerchio */
+    border-radius: 50%;
+    /* Crea la forma di un cerchio */
+    overflow: hidden;
+    /* Nasconde eventuali parti dell'immagine che escono dal cerchio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
