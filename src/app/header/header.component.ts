@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { DataExchangeService } from '../services/data-exchange.service';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { TEXT } from '../utils/texts';
+import { LABELS } from '../utils/labels';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +8,24 @@ import { DataExchangeService } from '../services/data-exchange.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  @Output() dialogEvent = new EventEmitter<boolean>();
 
-  readonly title: string = 'Lingua cv';
+  //LABELS 
+  readonly HOME = LABELS.HOME;
+  readonly ABOUT = LABELS.ABOUT;
+  readonly SKILLS = LABELS.SKILLS;
+  readonly BLOG = LABELS.BLOG;
+  readonly MORE = LABELS.MORE;
+  readonly CONTACT = LABELS.CONTACT;
+  readonly DOWNLOAD_CV = LABELS.DOWNLOAD_CV;
 
-  constructor(private dataExchangeService: DataExchangeService){}
+  readonly SHORT_DESCRIPTION: TEXT = TEXT.SHORT_DESCRIPTION;
+
+  constructor(){}
   
   openDialog(){
-    console.log('aperto dialog!!')
-    this.dataExchangeService.showDialog = true;
+    console.log('aperto HeaderComponent dialog!!')
+    this.dialogEvent.emit(true);
   }
 
 }

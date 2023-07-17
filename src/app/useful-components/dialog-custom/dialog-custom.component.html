@@ -1,7 +1,7 @@
 <p-dialog [header]="title" [(visible)]="dataExchangeService.showDialog" [modal]="true" [responsive]="true">
-    In che lingua vuoi scaricare il cv?
+    What language do you want to download the cv in?
     <p-footer>
-        <button type="button" pButton icon="pi pi-check" label="Italiano" (click)="getItaResume()"></button>
-        <button type="button" pButton icon="pi pi-times" label="Inglese" class="p-button-secondary" (click)="getEnResume()"></button>
+        <button type="button" pButton label="It" class="p-button-success" (click)="getItaResume()"></button>
+        <button type="button" pButton label="En" class="p-button-success" (click)="getEnResume()"></button>
     </p-footer>
 </p-dialog>

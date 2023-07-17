@@ -1,4 +1,6 @@
-<app-header></app-header>
+<app-header (dialogEvent)="onOpenDialog()"></app-header>
 <app-about></app-about>
-<app-services></app-services>
+<app-skills></app-skills>
 <app-footer></app-footer>
+  readonly title: string = 'Resume language choice';
+<app-dialog-custom [title]="titleDialog"></app-dialog-custom>

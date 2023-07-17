@@ -1,0 +1,23 @@
+<section class="skills" id="skills">
+    <div class="container">
+        <h1 class="skills-head">Skills</h1>
+        <p>All your digital needs... covered.</p>
+        <div class="card-grid">
+            <div class="card">
+                <img src="../../assets/icons/backend.png" />
+                <h2>Backend</h2>
+                <p *ngFor="let skill of getBeSkill()">{{ skill }}</p>
+            </div>
+            <div class="card">
+                <img src="../../assets/icons/frontend.png" />
+                <h2>Frontend</h2>
+                <p *ngFor="let skill of getFeSkill()">{{ skill }}</p>
+            </div>
+            <div class="card">
+                <img src="../../assets/icons/db.png" />
+                <h2>Database</h2>
+                <p *ngFor="let skill of getDbSkill()">{{ skill }}</p>
+            </div>
+        </div>
+    </div>
+</section>

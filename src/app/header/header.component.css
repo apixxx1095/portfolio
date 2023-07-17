@@ -9,10 +9,6 @@
 }
 
 .circle-container {
-    width: 200px;
-    /* Imposta la larghezza del cerchio */
-    height: 450px;
-    /* Imposta l'altezza del cerchio */
     border-radius: 50%;
     /* Crea la forma di un cerchio */
     overflow: hidden;
@@ -20,4 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-description{
+    display: flex;
+}
+
+.white{
+    color: #ffffff;
 }

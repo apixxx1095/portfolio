@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
-import { ServicesComponent } from './my-services/services.component';
+import { SkillsComponent } from './my-skills/skills.component';
 import { LoadingComponent } from './useful-components/loading/loading.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
@@ -21,7 +21,7 @@ import { DataExchangeService } from './services/data-exchange.service';
     HeaderComponent,
     AboutComponent,
     FooterComponent,
-    ServicesComponent,
+    SkillsComponent,
     LoadingComponent,
     DialogCustomComponent
   ],

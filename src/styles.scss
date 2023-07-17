@@ -3,8 +3,8 @@
 @import 'primeicons/primeicons.css';
 
 :root {
-  --primary: rgb(29, 221, 189);
-  --bgDark: rgb(12, 12, 12);
+  --primary: rgb(55, 118, 227);
+  --bgDark: rgb(26, 0, 143);
   --white: rgb(250, 250, 250);
   --secondary: rgb(0, 59, 50);
   --bgLight: rgb(190, 181, 181);
@@ -48,24 +48,25 @@ body {
 }
 
 .container {
-  max-width: 1152px;
+  max-width: 1405px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .hero {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 
 .hero .left img {
   width: 400px;
-  height: 500px;
+  height: 400px;
 }
 
 .hero .right {
   color: var(--white);
-  margin-top: -7rem;
+  margin-top: -3rem;
+  margin: 0 20px;
 }
 
 .hero .right h6 {
@@ -134,11 +135,11 @@ section.about .socials a:hover {
   background: var(--primary);
 }
 
-section.services {
-  background: rgb(17, 17, 17);
+section.skills {
+  background: rgb(26, 0, 143);
 }
 
-.services-head {
+.skills-head {
   color: rgb(10, 9, 9);
   text-align: center;
   margin-bottom: 1rem;
@@ -146,7 +147,7 @@ section.services {
   color: var(--primary);
 }
 
-.services-head+p {
+.skills-head+p {
   color: var(--white);
   font-family: "Lato", sans-serif;
   margin-bottom: 1rem;
@@ -160,13 +161,13 @@ section.services {
   background: white;
 }
 
-section.services .card-grid {
+section.skills .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
 }
 
-section.services .card-grid .card {
+section.skills .card-grid .card {
   background: var(--white);
   padding: 3rem 2rem;
   position: relative;
@@ -174,7 +175,7 @@ section.services .card-grid .card {
   transition: all 0.2s ease;
 }
 
-section.services .card-grid .card img {
+section.skills .card-grid .card img {
   position: absolute;
   top: -1.5rem;
   left: 50%;
@@ -182,27 +183,27 @@ section.services .card-grid .card img {
   color: var();
 }
 
-section.services .card-grid .card h2 {
+section.skills .card-grid .card h2 {
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
-section.services .card-grid .card p {
+section.skills .card-grid .card p {
   font-family: "Lato", sans-serif;
   color: var(--seconday);
   line-height: 1.6;
 }
 
-section.services .card-grid .card:hover {
+section.skills .card-grid .card:hover {
   background: var(--primary);
 }
 
-section.services .card-grid .card:hover h2 {
+section.skills .card-grid .card:hover h2 {
   color: var(--white);
 }
 
-section.services .card-grid .card:hover p {
+section.skills .card-grid .card:hover p {
   color: var(--white);
 }
 

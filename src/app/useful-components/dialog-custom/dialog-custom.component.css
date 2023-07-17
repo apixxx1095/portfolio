@@ -1,0 +1,6 @@
+/* Assicurati che il p-dialog sia posizionato in primo piano */
+.p-absolute {
+    position: absolute;
+    z-index: 9999;
+    /* Puoi impostare questo valore a qualsiasi numero maggiore di 0 */
+}
