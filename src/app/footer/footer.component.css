@@ -3,7 +3,7 @@
     left: 0;
     right: 0;
     padding: 5px 0;
-    background: #576895;
+    background: #24262b;
     color: white;
     font-weight: 500;
     display: flex;
@@ -27,7 +27,7 @@ ul {
 }
 
 .footer {
-    background-color: #576895;
+    background-color: #24262b;
     padding: 10px 0;
 }
 

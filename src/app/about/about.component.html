@@ -2,22 +2,54 @@
 <section class="about" id="about">
     <div class="container flex items-centre">
         <div class="right flex-1">
-            <h1>About <span>Me</span></h1>
-            <h3>Hello! I'm Jean Pierre.</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                adipisci distinctio obcaecati aliquid, quia tempora quis optio
-                repudiandae officia earum? Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit.
-            </p>
-            <div class="footer-col">
+            <h1 class="about-center">About <span>Me</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="resume-section">
+                            <h2>Personal Information</h2>
+                            <p><strong>Name:</strong> {{ INFO.NAME }}</p>
+                            <p><strong>Email:</strong> {{ INFO.EMAIL }}</p>
+                            <p><strong>Phone:</strong> {{ INFO.PHONE }}</p>
+                        </div>
+
+                        <div class="resume-section">
+                            <h2>Education</h2>
+                            <div class="experience" *ngFor="let education of INFO.EDUCATION">
+                                <h3>{{ education.titolo }}</h3>
+                                <p>{{ education.indirizzo }}</p>
+                                <p>{{ education.commento }}</p>
+                            </div>
+                            <!-- Aggiungi altre esperienze di istruzione qui -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="resume-section">
+                            <h2>Work experience</h2>
+                            <div class="experience" *ngFor="let experience of INFO.EXPERIENCES">
+                                <h3><b>{{ experience.posizione }}</b></h3>
+                                <p>{{ experience. nome }}</p>
+                                <p>{{ experience.indirizzo }}</p>
+                                <p>Descrizione delle responsabilità e realizzazioni</p>
+                            </div>
+                            <!-- Aggiungi altre esperienze lavorative qui -->
+                        </div>
+                        <div class="resume-section">
+                            <h2>Languages</h2>
+                            <p *ngFor="let language of INFO.LANGUAGES"><strong>{{ language.lingua }}:</strong> {{ language.livello }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer-col">
                 <div class="social-links">
                     <a target="_blank" [href]="FACEBOOK"><i class="pi pi-facebook"></i></a>
                     <a target="_blank" [href]="INSTAGRAM"><i class="pi pi-instagram"></i></a>
                     <a target="_blank" [href]="LINKEDIN"><i class="pi pi-linkedin"></i></a>
                     <a target="_blank" [href]="GITHUB"><i class="pi pi-github"></i></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

@@ -1,0 +1,15 @@
+.skills {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 50% 6%, 0 0);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 50% 6%, 0 0);
+    /* transform: scaleX(-1); */
+}
+
+/* PER UN FUTURO*/
+.container-skills{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-column-gap: 5%;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: center;
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SOCIAL_LINKS } from '../utils/socials-links';
+import { INFO } from '../utils/info';
 
 @Component({
   selector: 'app-about',
@@ -12,5 +13,7 @@ export class AboutComponent {
   readonly INSTAGRAM: SOCIAL_LINKS = SOCIAL_LINKS.INSTAGRAM;
   readonly LINKEDIN: SOCIAL_LINKS = SOCIAL_LINKS.LINKEDIN;
   readonly GITHUB: SOCIAL_LINKS = SOCIAL_LINKS.GITHUB;
+
+  readonly INFO = INFO;
   
 }

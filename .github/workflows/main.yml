@@ -30,7 +30,7 @@ jobs:
       - name: Setup nodejs
         uses: actions/setup-node@v3.7.0
         with:
-          noode-version: "18"
+          node-version: "18"
           
       # Install dependencies
       - name: Install deps
@@ -42,6 +42,6 @@ jobs:
       - name: Deploy to pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          build_dir: dist/
+          build_dir: dist/portfolio
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
